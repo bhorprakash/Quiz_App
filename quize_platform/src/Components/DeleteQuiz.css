@@ -1,0 +1,59 @@
+/* Container for the delete quiz page */
+.delete-quiz-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Heading */
+.delete-quiz-container h1 {
+    color: #dc3545;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Confirmation message */
+.delete-quiz-container p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Delete button */
+.delete-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+/* Delete button hover effect */
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+/* Cancel button */
+.cancel-button {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Cancel button hover effect */
+.cancel-button:hover {
+    background-color: #5a6268;
+}

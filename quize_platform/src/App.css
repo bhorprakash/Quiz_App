@@ -1,0 +1,114 @@
+/* App.css */
+
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #a8dee4, #5a84cd); /* Gradient background */
+  color: #fff;
+  animation: fadeIn 1s ease-in-out; /* Fade in effect for the body */
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Navigation Links */
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+nav a:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.05); /* Scale effect on hover */
+}
+
+/* Button Styles */
+button {
+  background: #2575fc; /* Button color */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s; /* Transition effects */
+}
+
+button:hover {
+  background: #6a11cb; /* Change button color on hover */
+  transform: scale(1.1); /* Scale effect */
+}
+
+/* Card Styles */
+.card {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  margin: 15px 0;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Lift effect */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7); /* Deeper shadow on hover */
+}
+
+/* Form Styles */
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin: 10px 0;
+  transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+  border-color: #6a11cb; /* Highlight border on focus */
+  outline: none; /* Remove outline */
+}
+
+/* Animated Loading Spinner */
+.spinner {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top: 4px solid #fff; /* Top color for the spinner */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite; /* Spin animation */
+  margin: auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  nav {
+      flex-direction: column; /* Stack links vertically on small screens */
+  }
+  
+  nav a {
+      margin: 5px 0; /* Add space between links */
+  }
+}

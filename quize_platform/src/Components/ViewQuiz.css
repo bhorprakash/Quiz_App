@@ -1,0 +1,96 @@
+/* Container for the ViewQuiz component */
+.view-quiz-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading for the quiz title */
+.view-quiz-container h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Description styling */
+.view-quiz-container p {
+    font-size: 1.2rem;
+    color: #11751c;
+    margin-bottom: 20px;
+}
+
+/* Section for questions */
+.view-quiz-container h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* List styling for questions */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Individual question item */
+.question-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+/* Strong emphasis for question text */
+.question-item strong {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #0d0d0d;
+}
+
+/* Option list */
+.options-list {
+    margin-left: 10px;
+    padding: 0;
+    list-style-type: none;
+}
+
+/* Individual option styling */
+.option-item {
+    margin-bottom: 8px;
+}
+
+/* Option button styling */
+.option-item button {
+    font-size: 1rem;
+    background: none;
+    border: 1px solid transparent;
+    color: #007bff;
+    cursor: pointer;
+    text-align: left;
+    padding: 0;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.option-item button:hover {
+    color: #0056b3;
+    border-bottom: 1px solid #0056b3;
+}
+
+/* Revealed answer styling */
+.revealed-answer {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #28a745;
+}
+
+/* Loading and error messages */
+.view-quiz-container div {
+    font-size: 1.2rem;
+    color: #999;
+    text-align: center;
+}

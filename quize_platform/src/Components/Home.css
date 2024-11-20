@@ -1,0 +1,33 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #abdceb, #fff); /* Light blue gradient background */
+    margin: 0;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px; /* Space between links */
+    font-size: 1em;
+}
+
+nav a {
+    color: #ffffff; /* White color for links */
+    background-color: #14252f; /* Primary blue color for buttons */
+    padding: 10px 20px; /* Padding for buttons */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

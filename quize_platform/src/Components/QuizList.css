@@ -1,0 +1,92 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #e2e2e2, #ffffff); /* Subtle gradient background */
+    margin: 0;
+    padding: 20px;
+}
+
+.quiz-list-container {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    margin: auto;
+    animation: fadeIn 0.6s ease-in; /* Fade-in effect */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.error-message {
+    color: #d9534f; /* Bootstrap danger color */
+    text-align: center;
+    margin: 10px 0;
+}
+
+.quiz-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 15px 0;
+    transition: transform 0.2s, box-shadow 0.2s; /* Transition effects */
+}
+
+.quiz-item:hover {
+    transform: scale(1.02); /* Slight scale effect on hover */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15); /* Shadow effect on hover */
+}
+
+.quiz-item h3 {
+    margin: 0 0 10px;
+    color: #007bff; /* Bootstrap primary color */
+}
+
+.quiz-item p {
+    margin: 5px 0;
+}
+
+.quiz-actions {
+    margin-top: 10px;
+}
+
+.quiz-actions a {
+    color: #007bff; /* Bootstrap primary color */
+    text-decoration: none;
+    margin-right: 15px;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.quiz-actions a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+.create-quiz-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.create-quiz-link a {
+    color: #28a745; /* Green color for create link */
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.create-quiz-link a:hover {
+    color: #218838; /* Darker green on hover */
+}
+
+/* Keyframes for fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
